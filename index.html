@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luka Bravo De Rueda | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #7dd3fc;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        header {
+            max-width: 1000px;
+            margin: 60px auto 40px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--accent);
+            font-size: 1.25rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 20px;
+        }
+
+        .contact-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .contact-bar a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            border-bottom: 2px solid #334155;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+
+        .summary-text {
+            font-size: 1.1rem;
+            color: var(--text-main);
+        }
+
+        .item {
+            margin-bottom: 25px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 8px;
+        }
+
+        .item-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .item-meta {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-align: right;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 6px;
+            color: var(--text-muted);
+        }
+
+        li::before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background-color: #334155;
+            color: var(--text-main);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #475569;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .item-header { flex-direction: column; }
+            .item-meta { text-align: left; margin-top: 4px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Luka Bravo De Rueda</h1>
+        <div class="subtitle">IT & Information Systems Professional</div>
+        <div class="contact-bar">
+            <span>📍 San Marcos, TX</span>
+            <span>📞 (512) 986-0198</span>
+            <span>✉️ <a href="mailto:lukabravo36972@hotmail.com">lukabravo36972@hotmail.com</a></span>
+        </div>
+    </header>
+
+    <main>
+        <section id="summary">
+            <h2>Professional Summary</h2>
+            <p class="summary-text">
+                Detail-oriented IT support professional with a strong foundation in hardware diagnostics, software installation, and technical troubleshooting. Proven track record of delivering excellent customer service in high-demand environments, managing equipment setups, and resolving complex technical issues efficiently. Possesses foundational programming skills and a collaborative mindset, ready to contribute to help desk and technical support teams.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Texas State University</div>
+                    <div class="item-meta">Aug '26 — Present<br>San Marcos, Texas</div>
+                </div>
+                <div style="color: var(--accent); font-weight: 600; margin-bottom: 8px;">Information Systems Degree (In Progress)</div>
+                <ul>
+                    <li>Acquiring comprehensive knowledge in systems analysis, database design, and business data communications to build and optimize enterprise-level technology solutions.</li>
+                    <li>Applying core methodologies to analyze business requirements and design secure, scalable information systems that improve organizational workflow.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Stanford University</div>
+                    <div class="item-meta">Jun — Jul '24</div>
+                </div>
+                <div style="color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">Certificate in Code in Place</div>
+                <ul>
+                    <li>CS106 Python Completion</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Austin Community College</div>
+                    <div class="item-meta">Aug '21</div>
+                </div>
+                <div style="color: var(--text-muted); font-weight: 600; margin-bottom: 4px;">Swift and Python Certificate in Computer Information Technology</div>
+                <ul>
+                    <li>Application Development - Swift level 1</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Professional Experience</h2>
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Voting Clerk</div>
+                    <div class="item-meta">Nov '24 — May '26</div>
+                </div>
+                <ul>
+                    <li>Setting up, assembling, testing, and troubleshooting critical electronic voting equipment.</li>
+                    <li>Utilized electronic poll pads to efficiently verify voter registration records.</li>
+                    <li>Assisted voters directly, offering clear explanations and walkthroughs of system use.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Computer Technical Support</div>
+                    <div class="item-meta">Aug '18 — '20<br>Leander High School</div>
+                </div>
+                <ul>
+                    <li>Assisted students and faculty directly with computer hardware diagnostics and repairs.</li>
+                    <li>Performed systemic security issue troubleshooting and complete software installations.</li>
+                    <li>Provided top-tier technical customer service during equipment checkout operations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Technical & Interpersonal Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-badge">Information Systems</span>
+                <span class="skill-badge">Cybersecurity Foundations</span>
+                <span class="skill-badge">Hardware Diagnostics</span>
+                <span class="skill-badge">Software Installation</span>
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">Swift & X-Code</span>
+                <span class="skill-badge">Microsoft Access</span>
+                <span class="skill-badge">Excel & Word</span>
+                <span class="skill-badge">Troubleshooting</span>
+                <span class="skill-badge">Customer Service</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Luka Bravo De Rueda. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
